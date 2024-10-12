@@ -14,7 +14,7 @@ default: ${EXEC_NAME}
 ${EXEC_NAME}:${OBJS}
 	${CC} ${CFLAGS} ${LDFLAGS} ${OBJS} -o $@
 
-install: invisteg
+install:${EXEC_NAME}
 ifneq ($(shell id -u), 0)
 	@echo "Installing ${EXEC_NAME} to ${USER_INSTALL_DIR}/${INSTALL_NAME}."
 	@install -m 755 ${EXEC_NAME} ${USER_INSTALL_DIR}/${INSTALL_NAME}
