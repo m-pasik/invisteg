@@ -1,4 +1,3 @@
-#include <argp.h>
 #include <png.h>
 #include <stdbool.h>
 #include <stdint.h>
